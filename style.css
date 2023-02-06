@@ -1,0 +1,272 @@
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;}
+header{
+	width: 100%;
+	height: 100vh;
+}
+html {
+	scroll-behavior: smooth;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 3px solid indianred;
+	box-shadow: 2px 0px 5px indianred;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+	.logo{
+		font-family: monospace;
+		font-size: 4em;
+		letter-spacing: 2px;
+		color: indianred;
+}
+.menu a{
+		text-decoration: none;
+		color: black;
+		padding: 10px 20px;
+		font-size: 20px;
+		position: relative;
+		}
+		.menu a:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			border-bottom: 2px solid indianred;
+			transition: 0.4s linear;
+		}
+		 .menu a:hover:before{
+           width: 90%;
+		 }
+		 .menu a:first-child{
+		 	background: indianred;
+		 	color: black;
+		 	border-radius: 8px;
+            transition: 0.4s;
+		 }
+
+		 .menu a:first-child:hover{
+ 	background: transparent;
+ 	border: 1px solid indianred;
+ }
+
+		 .cart a{
+		text-decoration: none;
+		color: black;
+		padding: 10px 20px;
+		font-size: 20px;
+		background: indianred;
+		border-radius: 8px;
+		transition: 0.4s;
+}  
+ .cart a:hover{
+ 	background: transparent;
+ 	border: 1px solid indianred;
+
+ }  
+ .left img{
+ 	width: 120vh;
+ 	padding: 50px 10px;
+ 	animation: animate 3s linear infinite;
+ }
+ .left h1{
+
+ 		font-size: 30px;
+ 	font-family: monospace;
+ 	position: absolute;
+ 	top: 78vh;
+ 	left: 50vh;
+    background: indianred;
+ 	color: black;
+ }
+
+ @keyframes animate{
+ 	0%{
+ 		transform: scale(1.1);
+ 	}
+ 	50%{
+ 		transform: scale(1);
+ 	}
+ 	100%{
+ 		transform: scale(1.1);
+ 	}
+ }
+ 
+
+ .container{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	transform-style: preserve-3d;
+ 	transform-origin: center;
+ 	perspective: 2000px;
+ }
+ .left{
+ 	flex-basis: 50%;
+ }
+ .right{
+ 	flex-basis: 50%;
+ 	max-width: 400px;
+ 	margin-left: 100px;
+ }
+ .right h1{
+ 	font-size: 35px;
+ 	font-family: monospace;
+ 	color: black;
+ 	margin: 5px 0;
+ }
+  .right p{
+ 	font-size: 15px;
+ 	font-family: sans-serif;
+ 	color: black;
+ 
+ }
+ .right h2{
+ 	font-size: 20px;
+ 	font-family: monospace;
+ 	color: black;
+ 	margin: 5px 0;
+ }
+  .right h3{
+ 	font-size: 20px;
+ 	font-family: monospace;
+ 	color: black;
+ 	margin: 5px 0;
+ }
+ .btn-group button{
+ 	font-size: 20px;
+ 	background-color: indianred;
+ 	border: 1px solid white;
+ 	border-radius: 8px;
+ 	color: black;
+ 	padding: 10px 20px;
+ 	cursor: pointer;
+ 	width: 70%;
+ 	display: block;
+ }
+
+ .right h4{
+	font-size: 50px;
+ 	font-family: monospace;
+ 	color: black;
+ 	margin: 5px 20px;
+ }
+ .right h3{
+ 	font-size: 15px;
+ 	font-family: sans-serif;
+ 	color: black;
+ 	
+ }
+ .right h5{
+ 	font-family: sans-serif;
+ 	width: 95%;
+	height: 30px;
+	background: indianred;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	flex-wrap: wrap;
+ }
+.btn-group button:hover{
+ 	background: transparent;
+ 	border: 1px solid indianred;
+ }
+ .icons i{
+	font-size: 20px;
+	padding: 5px;
+	margin: 0 5px;
+	border: 1px solid indianred;
+	border-radius: 8px;
+	transition: 0.4s;
+}
+.icons i:hover{
+	background: indianred;
+ 	border: 1px solid indianred;
+}
+#KitItems {
+	padding: 50px 0px;
+	font-size: 50px;
+	text-align: center;
+}
+#KitItems h1{
+	font-family: monospace;
+	margin-bottom: 20px;
+}
+.details{
+	display: grid;
+	grid-template-columns: repeat(1, 30%);
+	grid-auto-rows: minmax(1px,auto);
+	grid-gap: 2em;
+	justify-content: center;
+	cursor: pointer;
+}
+.details img{
+ 	width: 100%;
+ 	padding: 0px 10px;
+ 	overflow: hidden;
+  }
+ .box1{
+ grid-row: 1/1;
+grid-column: 3/3;
+ }
+ .details>div{
+ 	border: 2px solid indianred;
+ 	position: relative;
+ 	box-shadow: 2px 3px 5px grey;
+ }
+ .name{
+ 	font-size: 20px;
+ 	font-family: monospace;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+    background: indianred;
+ 	color: black;
+ 	
+ }
+ .details div img:hover{
+ 	transform: scale(1.2);
+ 	transition: 0.4s linear;
+ }
+ #Products{
+ 	padding: 80px 0px;
+ 	text-align: center;
+ }
+ #Products h1{
+	font-family: monospace;
+	margin-bottom: 65px;
+	font-size: 35px;
+}
+ .Products-row{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+ .Products-box{
+ 	flex-basis: 15%;
+ 	box-shadow: 2px 3px 5px indianred;
+ 	cursor: pointer;
+ 	padding: 10px;
+ 	text-align: center;
+}
+ .Products-box img{
+    width: 100%;
+    }
+     .Products-box h2{
+margin: 20px 0px;
+
+     }
+       .Products-box h3{
+       	background: indianred;
+       	color: black;
+       	padding: 10px;
+       }
+        .Products-box:hover{
+        	transform: translateY(-20px);
+        	transition: 0.4s ease;
+        }
